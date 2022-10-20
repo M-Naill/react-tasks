@@ -20,7 +20,7 @@ function Details() {
 
   return (
     <div className="container text-center pt-5">
-      <div className="row">
+      <div className="row d-flex mt-5">
         <Card style={{ width: "18rem" }}>
           <Card.Img variant="top" src={prod.image} />
           <Card.Body>

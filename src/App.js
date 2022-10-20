@@ -8,6 +8,8 @@ import Shop from './Components/shop';
 import Details from './Components/shop/details';
 import Counter from './Components/counter';
 import Cart from './Components/cart';
+import Signup from './Components/signup';
+import Signin from './Components/signin';
 
 
 function App() {
@@ -20,10 +22,10 @@ function App() {
         <Route path='/shop' element={<Shop />} />
         <Route path='shop/:id' element={<Details />} />
         <Route path='/counter' element={<Counter />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/signin' element={<Signin />} />
         <Route path='/cart' element={<Cart />} />
       </Routes>
-
-
     </BrowserRouter >
   );
 }

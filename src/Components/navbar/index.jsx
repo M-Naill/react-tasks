@@ -8,7 +8,7 @@ const Navbar = () => {
   const cartitems = useSelector((store) => store.cart.cartItems);
   console.log(cartitems);
   return (
-    <nav className="navbar fixed-top navbar-expand-lg bg-light">
+    <nav className="navbar  navbar-expand-lg bg-light">
       <div className="container-fluid mx-5">
         <Link className="navbar-brand" to="/">
           Naill Store
@@ -46,14 +46,24 @@ const Navbar = () => {
             </li>
             <li className="nav-item me-3">
               <Link className="nav-link" to="/counter">
-                Counter
+                Donate
+              </Link>
+            </li>
+            <li className="nav-item me-3">
+              <Link className="nav-link" to="/signup">
+                Sign Up
+              </Link>
+            </li>
+            <li className="nav-item me-3">
+              <Link className="nav-link" to="/signin">
+                Sign In
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/cart">
-                <button type="button" class="btn btn-primary">
+                <button type="button" className="btn btn-primary">
                   <FontAwesomeIcon icon={faCartShopping} />{" "}
-                  <span class="badge bg-secondary">{cartcount}</span>
+                  <span className="badge bg-secondary">{cartcount}</span>
                 </button>
               </Link>
             </li>
